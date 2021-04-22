@@ -1,0 +1,6 @@
+framework module CZBaseLib {
+  umbrella header "CZBaseLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

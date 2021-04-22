@@ -61,12 +61,12 @@
 		65B4B5C60F206747E3B38E62 /* Pods-CZBaseLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CZBaseLib_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CZBaseLib_Tests/Pods-CZBaseLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AAD80DE1ED393AFA3BA5AC2A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AAD80DE1ED393AFA3BA5AC2A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B65D4C328A8165A490FE0327 /* Pods-CZBaseLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CZBaseLib_Example.debug.xcconfig"; path = "Target Support Files/Pods-CZBaseLib_Example/Pods-CZBaseLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E3E25268FDA89FFBF1347C2D /* Pods-CZBaseLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CZBaseLib_Example.release.xcconfig"; path = "Target Support Files/Pods-CZBaseLib_Example/Pods-CZBaseLib_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EBC7F44BE5729438A4F207D8 /* Pods_CZBaseLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CZBaseLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F83E33E956CB6A10583E0606 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FF57F0C78B622787E10D40F6 /* CZBaseLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CZBaseLib.podspec; path = ../CZBaseLib.podspec; sourceTree = "<group>"; };
+		F83E33E956CB6A10583E0606 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FF57F0C78B622787E10D40F6 /* CZBaseLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CZBaseLib.podspec; path = ../CZBaseLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				65B4B5C60F206747E3B38E62 /* Pods-CZBaseLib_Tests.debug.xcconfig */,
 				4BFCD578FF7F8B2B288FBB0D /* Pods-CZBaseLib_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -516,10 +516,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CZBaseLib/CZBaseLib-Prefix.pch";
 				INFOPLIST_FILE = "CZBaseLib/CZBaseLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -532,10 +534,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CZBaseLib/CZBaseLib-Prefix.pch";
 				INFOPLIST_FILE = "CZBaseLib/CZBaseLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
