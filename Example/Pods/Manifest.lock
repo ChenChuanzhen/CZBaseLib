@@ -1,5 +1,5 @@
 PODS:
-  - CZBaseLib (0.1.0)
+  - CZBaseLib (0.0.1)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CZBaseLib: c0f4b2bf70e250372ecf17ed401e73ef2566fa91
+  CZBaseLib: f7a24cf5cb256c8a2c520fcb92572b43a2ddfb90
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
 
 PODFILE CHECKSUM: 903c1f618929cccec9855f45b0b4a4f0248598cf

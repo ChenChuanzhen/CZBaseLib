@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CZBaseLib'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = '陈传真开发基类库'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'CZBaseLib/Classes/**/*'
+  # s.source_files = 'Classes/**/*'
+  s.subspec 'Categories' do |a|
+    a.source_files = 'Categories/**/*'
+  end
   
   # s.resource_bundles = {
   #   'CZBaseLib' => ['CZBaseLib/Assets/*.png']
